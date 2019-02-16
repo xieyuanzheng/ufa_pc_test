@@ -1,7 +1,8 @@
-import unittest,time,HTMLTestRunner,os,datetime,sys
+import unittest,time,HTMLTestRunner,os,datetime,sys,logging
 from config.config_01 import broswer_config
 from constant.constant_01 import UFA_HOME_URL,UFA_LOGIN_ADMIN
 from util import getReport,sendEmail
+from selenium.webdriver.support.select import Select
 
 #sys.path[0]=os.path.abspath(os.path.join(os.getcwd(), "../.."))
 sys.path[0]=os.path.abspath(os.path.dirname(os.getcwd()))
@@ -121,6 +122,22 @@ class LoginAndLogout(unittest.TestCase):
         admin_title = self.browser.title
         if  not "UFA平台管理中心" in admin_title:
             isFlag = False
+        #状态下拉框select选择，企业信息管理
+        #self.browser.switch_to.frame(0)
+        self.browser.switch_to.frame('ifr_0')
+        self.browser.find_element_by_xpath('//*[@id="shortcut"]/div[1]/section/div[2]/dd/a/h3').click() #选择首页--订单管理
+        time.sleep(3)
+        # self.browser.find_element_by_xpath('//*[@id="larry_left_menu"]/li[2]/a/i').click() #选择一级菜单
+        # self.browser.find_element_by_xpath('//*[@id="larry_left_menu"]/li[2]/dl/dd[1]/a/cite').click() #选择二级菜单
+        # iframes = self.browser.find_elements_by_tag_name("iframe")
+        # for iframe in iframes:
+        #     self.browser.switch_to.frame(iframe)
+        #     logging.warning(self.browser.title)
+        #     if  self.browser.find_element_by_xpath('//*[@id="tableFrom"]/div[1]/div[1]/div[2]/div/div/div/input'):
+        #         self.browser.find_element_by_xpath('//*[@id="tableFrom"]/div[1]/div[1]/div[2]/div/div/div/input').click()
+        #         self.browser.find_element_by_xpath('//*[@id="tableFrom"]/div[1]/div[1]/div[2]/div/div/dl/dd[4]').click() #选择审核未通过
+        #         self.browser.find_element_by_xpath('//*[@id="tableFrom"]/div[1]/div[2]/div[4]/a').click() #点击查询
+        #     time.sleep(3)
         self.assertEqual(True, isFlag)
         self.browser.quit()
 
