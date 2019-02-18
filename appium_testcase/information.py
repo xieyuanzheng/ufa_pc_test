@@ -1,7 +1,10 @@
-import unittest,time,os,datetime
+import time
+import unittest
+
 from appium import webdriver
-from ddt import ddt,data,unpack
-from tools import getnow
+
+from util import getnow
+
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):

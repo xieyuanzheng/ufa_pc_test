@@ -7,3 +7,11 @@ UFA_HOME_URL = 'https://www.ufa.hk'
 UFA_MALL_URL = 'https://www.ufa.hk/mall/index.html'
 UFA_LOGIN_URL = 'https://www.ufa.hk/mall/login.html'
 UFA_LOGIN_ADMIN = 'https://www.ufa.hk/admin/'
+
+DB_Mysql = {
+    "HOST" : "localhost",
+    "USER" : "jamko",
+    "PASSWORD" : "ufa123456",
+    "NAME" : "interfacetestcase",
+    "CHARSET":"utf8"
+}

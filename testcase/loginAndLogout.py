@@ -3,6 +3,7 @@ from config.config_01 import broswer_config
 from constant.constant_01 import UFA_HOME_URL,UFA_LOGIN_ADMIN
 from util import getReport,sendEmail
 from selenium.webdriver.support.select import Select
+from log.log import log1
 
 #sys.path[0]=os.path.abspath(os.path.join(os.getcwd(), "../.."))
 sys.path[0]=os.path.abspath(os.path.dirname(os.getcwd()))
@@ -34,7 +35,7 @@ class LoginAndLogout(unittest.TestCase):
 
     def test_s1_openhomepage(self):
         u"""众家联首页"""
-        print("test case1:test_openhomepage")
+        log1.info("test case1:test_openhomepage")
         self.browser.get(UFA_HOME_URL)
         self.browser.maximize_window()
         title = self.browser.title

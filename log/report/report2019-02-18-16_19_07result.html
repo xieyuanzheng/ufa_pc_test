@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Report_title</title>
+    <title>UFA自动化</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,12 +188,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>Report_title</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-02-15 09:24:55</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:11.722000</p>
-<p class='attribute'><strong>Status:</strong> Error 1</p>
+<h1>UFA自动化</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-02-18 16:19:07</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:34.854000</p>
+<p class='attribute'><strong>Status:</strong> Pass 9</p>
 
-<p class='description'>Report_description</p>
+<p class='description'>众家联PC端自动化测试报告</p>
 </div>
 
 
@@ -221,61 +221,31 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>LoginAndLogout</td>
-    <td>1</td>
+<tr class='passClass'>
+    <td>testcase.loginAndLogout.LoginAndLogout</td>
+    <td>4</td>
+    <td>4</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_s4_loginadmin: 登录admin管理后台</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s1_openhomepage: 众家联首页</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "D:/Projects/Python Project/ufa_pc_test/testcase/loginAndLogout.py", line 132, in test_s4_loginadmin
-    if  self.browser.find_element_by_xpath('//*[@id="tableFrom"]/div[1]/div[1]/div[2]/div/div/div/input'):
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 385, in find_element_by_xpath
-    return self.find_element(by=By.XPATH, value=xpath)
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tableFrom"]/div[1]/div[1]/div[2]/div/div/div/input"}
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64)
-
-Traceback (most recent call last):
-  File "D:/Projects/Python Project/ufa_pc_test/testcase/loginAndLogout.py", line 132, in test_s4_loginadmin
-    if  self.browser.find_element_by_xpath('//*[@id="tableFrom"]/div[1]/div[1]/div[2]/div/div/div/input'):
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 385, in find_element_by_xpath
-    return self.find_element(by=By.XPATH, value=xpath)
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tableFrom"]/div[1]/div[1]/div[2]/div/div/div/input"}
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64)
-
-
+pt1.1: 
 
         </pre>
     </div>
@@ -284,12 +254,154 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
     </td>
 </tr>
 
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s2_loginportweb_supply: 供应商登录portweb和退出</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s3_loginportweb_purchase: 采购商登录portweb和退出</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s4_loginadmin: 登录admin管理后台</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        pass</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>testcase.homeLink.HomeLinkAndDetailSD: 供求市场</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s1_supplyAndDemand: 供求列表及详情页</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>testcase.homeLink.HomeLinkAndDetailInfo: 行情资讯</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s2_information: 行情资讯及详情页</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>testcase.homeLink.HomeLinkAndDetailVideo: 精彩视频</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+</tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s3_video: 精彩视频及详情页</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>testcase.search.GoodsSearch: 商品搜索</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
+</tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s1_goodssearch: 未登录不能查看价格</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>testcase.search.StoreSearch: 店铺搜索</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c6',1)">Detail</a></td>
+</tr>
+
+<tr id='pt6.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_s1_storesearch: 搜索-东莞众家联供应链服务有限公司</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
+    <td>9</td>
+    <td>9</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

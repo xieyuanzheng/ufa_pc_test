@@ -1,0 +1,7 @@
+2019-02-18 16:55:20,937 - selenium - INFO - 开始测试
+2019-02-18 16:55:20,940 - selenium - ERROR - 报错信息 : 
+Traceback (most recent call last):
+  File "D:/Projects/Python Project/ufa_pc_test/util/opt_csv.py", line 59, in <module>
+    r = 10/0
+ZeroDivisionError: division by zero
+2019-02-18 16:55:20,942 - selenium - INFO - end

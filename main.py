@@ -5,8 +5,10 @@ from util import getReport,sendEmail
 from testcase.loginAndLogout import LoginAndLogout
 from testcase.homeLink import HomeLinkAndDetailSD,HomeLinkAndDetailInfo,HomeLinkAndDetailVideo
 from testcase.search import GoodsSearch,StoreSearch
+from log.log import log1
 
 if __name__ == '__main__':
+    log1.info("开始测试")
     #unittest.main()
     # 执行测试用例集并生成报告
     # suite = unittest.TestSuite()
@@ -28,6 +30,7 @@ if __name__ == '__main__':
     now_hour = time.strftime("%Y-%m-%d-%H", time.localtime(time.time()))
     dir1 = os.path.abspath(os.path.dirname(__file__))
     dir2 = os.path.join(dir1, 'log')
+    dir2 = os.path.join(dir2, 'report')
     html_filename = os.path.join(dir2, "report" + now + "result.html")
     picture_name = os.path.join(os.path.join(dir1,'screenshot'),now_hour+".jpg")
     listpart = [html_filename,picture_name]
@@ -47,3 +50,4 @@ if __name__ == '__main__':
     else:
         text = "自动化测试用例正常，网站正常打开。本次是测试邮件，以后会在异常的时候再发邮件。每天8点和14点自动执行一次"
         #sendEmail.SendEmail(listpart, text,to_addr_list)
+    log1.info("end")
