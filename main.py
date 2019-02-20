@@ -5,6 +5,7 @@ from util import getReport,sendEmail
 from testcase.loginAndLogout import LoginAndLogout
 from testcase.homeLink import HomeLinkAndDetailSD,HomeLinkAndDetailInfo,HomeLinkAndDetailVideo
 from testcase.search import GoodsSearch,StoreSearch
+from testcase.mallpost import MyTestCase
 from log.log import log1
 
 if __name__ == '__main__':
@@ -22,7 +23,8 @@ if __name__ == '__main__':
     suite4 = unittest.TestLoader().loadTestsFromTestCase(HomeLinkAndDetailVideo)
     suite5 = unittest.TestLoader().loadTestsFromTestCase(GoodsSearch)
     suite6 = unittest.TestLoader().loadTestsFromTestCase(StoreSearch)
-    suite = unittest.TestSuite([suite1,suite2,suite3,suite4,suite5,suite6])
+    suite7 = unittest.TestLoader().loadTestsFromTestCase(MyTestCase)
+    suite = unittest.TestSuite([suite1,suite2,suite3,suite4,suite5,suite6,suite7])
     runner = unittest.TextTestRunner(verbosity=2)
     print("--------------------")
     #生成测试报告

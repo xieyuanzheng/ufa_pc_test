@@ -1,6 +1,7 @@
 import unittest,os,time
 from config.config_01 import broswer_config
 from constant.constant_01 import UFA_HOME_URL
+from log.log import log1
 
 
 class HomeLinkAndDetailSD(unittest.TestCase):
@@ -24,14 +25,16 @@ class HomeLinkAndDetailSD(unittest.TestCase):
                 self.browser.switch_to_window(handle)
                 #判断供求列表是否为空
                 sd_type = self.browser.find_element_by_xpath("/html/body/div[4]/div[1]/ul/li[1]/span[1]").text
-                if not sd_type == "供应" or sd_type == "求购":
+                if not (sd_type == "供应" or sd_type == "采购"):
+                    log1.info(sd_type)
                     isFlag = False
                     #如果出错就截屏
-                    now = time.strftime("%Y-%m-%d-%H", time.localtime(time.time()))
+                    now = time.strftime("%Y-%m-%d-%H-%M", time.localtime(time.time()))
                     current_dir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
                     save_dir = os.path.join(current_dir, "screenshot")
                     self.browser.save_screenshot(os.path.join(save_dir, now + ".jpg"))
                 else:
+                    log1.info("else : " + str(sd_type))
                     self.browser.find_element_by_xpath('/html/body/div[4]/div[1]/ul/li[1]/span[11]/a').click()
                     current_handle1 = self.browser.current_window_handle
                     if current_handle1 != handle:

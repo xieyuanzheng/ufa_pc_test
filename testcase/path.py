@@ -9,6 +9,6 @@ import platform
 # print("rootPath : " + rootPath)
 print(sys.path)
 
-from  testcase import path2
+from  pcui_testcase import path2
 
 print(path2.isWindows())

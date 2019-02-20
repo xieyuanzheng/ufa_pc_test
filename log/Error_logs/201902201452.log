@@ -1,0 +1,5 @@
+2019-02-20 14:52:26,927 - selenium - INFO - main  - 12 - 开始测试
+2019-02-20 14:52:26,927 - selenium - INFO - loginAndLogout  - 38 - test case1:test_openhomepage
+2019-02-20 14:53:51,648 - selenium - INFO - mallpost  - 17 - 搜索店铺 : test_searchStore
+2019-02-20 14:53:51,660 - selenium - INFO - mallpost  - 21 - 黄家国
+2019-02-20 14:53:53,540 - selenium - INFO - main  - 55 - end

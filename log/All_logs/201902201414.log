@@ -1,0 +1,5 @@
+2019-02-20 14:14:29,500 - selenium - INFO - 开始测试
+2019-02-20 14:14:29,503 - selenium - INFO - test case1:test_openhomepage
+2019-02-20 14:16:00,438 - selenium - INFO - 搜索店铺 : test_searchStore
+2019-02-20 14:16:00,463 - selenium - INFO - 黄家国
+2019-02-20 14:16:03,284 - selenium - INFO - end

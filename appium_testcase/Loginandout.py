@@ -60,7 +60,7 @@ class MyTestCase(unittest.TestCase):
         print("width: " ,width)
         print("height: " ,height)
         print("current activity:",self.driver.current_activity)
-        self.driver.save_screenshot('D:/Projects/Python Project/ufatest/screenshots/foo.png')
+        self.driver.save_screenshot('D:/Projects/Python Project/ufatest/screenshot/foo.png')
         self.assertEqual(exist,expectedresult)
         time.sleep(1)
 
