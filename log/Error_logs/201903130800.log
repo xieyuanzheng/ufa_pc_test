@@ -1,0 +1,7 @@
+2019-03-13 08:00:34,039 - selenium - INFO - main  - 12 - 开始测试
+2019-03-13 08:00:34,041 - selenium - INFO - loginAndLogout  - 38 - test case1:test_openhomepage
+2019-03-13 08:01:15,112 - selenium - INFO - homeLink  - 37 - else : 采购
+2019-03-13 08:02:13,663 - selenium - INFO - mallpost  - 17 - 搜索店铺 : test_searchStore
+2019-03-13 08:02:13,665 - selenium - INFO - mallpost  - 21 - 黄家国
+2019-03-13 08:02:14,135 - selenium - INFO - main  - 46 - <HTMLTestRunner._TestResult run=13 errors=0 failures=0>
+2019-03-13 08:02:14,136 - selenium - INFO - main  - 56 - end

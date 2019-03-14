@@ -43,6 +43,7 @@ if __name__ == '__main__':
     runNumber = int(str(result)[str(result).find('run')+4])
     errorNumber = int(str(result)[str(result).find('errors') + 7])
     failuresNumber = int(str(result)[str(result).find('failures') + 9])
+    log1.info(result)
     fp.close()
     to_addr_list = ['121546683@qq.com']
     #to_addr_list = ['4141847@qq.com', '121546683@qq.com','76656630@qq.com','181643605@qq.com','368422559@qq.com','297086499@qq.com']

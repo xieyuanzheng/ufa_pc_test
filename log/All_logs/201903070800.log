@@ -1,0 +1,7 @@
+2019-03-07 08:00:51,819 - selenium - INFO - 开始测试
+2019-03-07 08:00:51,823 - selenium - INFO - test case1:test_openhomepage
+2019-03-07 08:01:32,608 - selenium - INFO - else : 供应
+2019-03-07 08:02:24,329 - selenium - INFO - 搜索店铺 : test_searchStore
+2019-03-07 08:02:24,339 - selenium - INFO - 黄家国
+2019-03-07 08:02:24,750 - selenium - INFO - <HTMLTestRunner._TestResult run=13 errors=0 failures=0>
+2019-03-07 08:02:24,751 - selenium - INFO - end
